@@ -134,7 +134,7 @@ header {
 }
 /*footer*/
 footer{
-margin-top: 250px;
+margin-top: 0px;
 }
 .footer-container{
 gap: 2rem;
@@ -143,6 +143,9 @@ justify-content: center;
 align-content: space-between;
 }
 
+.footer-menu{
+  padding-bottom: 30px;
+}
 .footer-menu a{
   color: #00ffff;
   margin: 10px;  
@@ -161,6 +164,7 @@ align-content: space-between;
   justify-content: center;
   color: darkgrey;
   margin-bottom: 10px;
+  padding-top: 30px;
 }
 
 .Copyright{
@@ -177,7 +181,18 @@ align-content: space-between;
 }
 /*form work with us*/
 
-
+.container__form{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  background-image: url(../imagenes/tokyo-city-aesthetic.gif);
+  height: 850px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .container__form .form .form__header .form__title {
   font-weight: normal;
   font-family: 'Zen Dots', cursive;
@@ -197,7 +212,6 @@ align-content: space-between;
   max-width: 650px;
   margin: auto;
   padding: 25px 35px;
-  margin-top: 30px;
   padding-bottom: 30px;
   border-radius: 3px;
 }
@@ -272,8 +286,8 @@ h5,p{
 .carrousel2{
   padding-top: 75px;
  display: none;
-
 }
+
 
 /* about us*/
 
@@ -288,6 +302,7 @@ h5,p{
   .carrousel2 {
     display: flex;
   }
+  
   .socials{
     display: flex;
     margin-top: 50px;

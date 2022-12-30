@@ -96,7 +96,6 @@ header {
 }
 
 
-
 .navbar-brand:hover {
   color: rgb(244, 149, 231);
   text-shadow: 0 0 5px #f495e7,
@@ -124,6 +123,7 @@ header {
 
 }
 
+/*videos*/
 
 .container__video {
   display: flex;
@@ -181,6 +181,7 @@ align-content: space-between;
   background:linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(121, 9, 118, 1) 35%, rgba(0, 185, 255, 1) 100%);
   
 }
+
 /*form work with us*/
 
 .container__form{
@@ -242,7 +243,6 @@ align-content: space-between;
 }
 
 
-
 .container__form .form .form__textarea {
   resize: vertical;
   max-height: 150px;
@@ -294,8 +294,8 @@ h5,p{
 /* about us*/
 
 
-/*media querry*/
 
+/*media querry*/
 
 @media only screen and (max-width: 750px) {
   .carrousel {

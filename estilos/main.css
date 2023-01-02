@@ -293,8 +293,6 @@ h5,p{
 
 /* about us*/
 
-
-
 /*media querry*/
 
 @media only screen and (max-width: 750px) {
@@ -316,7 +314,4 @@ h5,p{
   margin-top: 5px;
   padding: 5px;
   }
-}
-@media only screen and (max-width: 576px) {
- 
 }

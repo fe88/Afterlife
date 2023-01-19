@@ -60,6 +60,8 @@ header {
   border: 0px;
   border-radius: 0px;
   transition: none;
+  color: #f495e7
+
 }
 
 .navbar-toggler:focus {
@@ -91,9 +93,7 @@ header {
   font-family: 'Zen Dots', cursive;
 }
 
-.navbar-toggler {
-  color: #f495e7
-}
+
 
 
 .navbar-brand:hover {
@@ -134,53 +134,53 @@ header {
 }
 /*footer*/
 footer{
-margin-top: 0px;
-}
-.footer-container{
-gap: 2rem;
-display: flex;
-justify-content: center;
-align-content: space-between;
-}
-
-.footer-menu{
-  padding-bottom: 30px;
-}
-.footer-menu a{
-  color: #00ffff;
-  margin: 10px;  
-}
-
-.footer-menu a:hover{
-  color: rgb(244, 149, 231);
-  text-shadow: 0 0 5px #f495e7,
-    0 0 25px #f495e7,
-    0 0 50px #f495e7,
-    0 0 100px #ffffff;
-  transition: 1.3s;
-}
-.socials{
+  margin-top: 0px;
+  }
+  .footer-container{
+  gap: 2rem;
   display: flex;
   justify-content: center;
-  color: darkgrey;
-  margin-bottom: 10px;
-  padding-top: 30px;
-  font-family: 'Zen Dots', cursive;
-  font-size: 20px;
-}
-
-.Copyright{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: flex-end;
-  font-size: 15px;
-  margin-top: 20px;
-  margin-bottom:4px;
-  box-shadow: 0 0 10px #f495e7;
-  background:linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(121, 9, 118, 1) 35%, rgba(0, 185, 255, 1) 100%);
+  align-content: space-between;
+  }
   
-}
+  .footer-menu{
+    padding-bottom: 30px;
+  }
+  .footer-menu a{
+    color: #00ffff;
+    margin: 10px;  
+  }
+  
+  .footer-menu a:hover{
+    color: rgb(244, 149, 231);
+    text-shadow: 0 0 5px #f495e7,
+      0 0 25px #f495e7,
+      0 0 50px #f495e7,
+      0 0 100px #ffffff;
+    transition: 1.3s;
+  }
+  .socials{
+    display: flex;
+    justify-content: center;
+    color: darkgrey;
+    margin-bottom: 10px;
+    padding-top: 30px;
+    font-family: 'Zen Dots', cursive;
+    font-size: 20px;
+  }
+  
+  .Copyright{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: flex-end;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom:4px;
+    box-shadow: 0 0 10px #f495e7;
+    background:linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(121, 9, 118, 1) 35%, rgba(0, 185, 255, 1) 100%);
+    
+  }
 
 /*form work with us*/
 

@@ -1,0 +1,89 @@
+.container__form {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    background-image: url(../imagenes/tokyo-city-aesthetic.gif);
+    height: 850px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    form {
+        background: #00000099;
+        width: 90%;
+        max-width: 650px;
+        margin: auto;
+        padding: 25px 35px;
+        padding-bottom: 30px;
+        border-radius: 3px;
+
+        .form__header {
+            .form__title {
+                font-weight: normal;
+                font-family: 'Zen Dots', cursive;
+                color: #00ffff;
+                text-align: center;
+                padding: 14px 0;
+                font-size: 20px;
+
+                span {
+                    color: #f495e7;
+                }
+            }
+        }
+
+        .form__label {
+            display: block;
+            color: #00ffff;
+            font-size: 16px;
+            font-family: 'Zen Dots', cursive;
+            position: relative;
+        }
+
+        .form__input {
+
+        }
+
+        .form__textarea,.form__input {
+            background: rgba(0, 0, 0, .7);
+            border: none;
+            outline: none;
+            border-bottom: 2px solid #f495e7;
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 2px;
+            font-size: 14px;
+            color: #ff851b;
+            font-family: 'Zen Dots', cursive;
+            resize: vertical;
+            max-height: 150px;
+            min-height: 50px;
+        }
+
+        .btn__submit {
+            width: 100%;
+            font-family: 'Zen Dots', cursive;
+            outline: none;
+            background: #00ffff;
+            font-size: 16px;
+            border: none;
+            color: black;
+            padding: 15px 0;
+            cursor: pointer;
+            transition: all 1.3s ease;
+
+            &:hover {
+                background: #f495e7;
+                color: rgb(0, 255, 255);
+                box-shadow: 0 0 5px #f495e7,
+                    0 0 25px #f495e7,
+                    0 0 50px #f495e7,
+                    0 0 100px #f495e7;
+            }
+        }
+    }
+
+}

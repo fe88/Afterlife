@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: black;
+  min-height: 100vh; }
+
+/*----HEADER----*/
+header {
+  top: 0px; }
+  header .navbar.navbar-light.bg-color {
+    box-shadow: 0 0 10px #f495e7;
+    background: linear-gradient(90deg, black 0%, #790976 35%, #00b9ff 100%); }
+    header .navbar.navbar-light.bg-color .container-fluid .navbar-brand {
+      color: #f495e7 !important;
+      font-size: 1.5rem !important;
+      font-family: 'Zen Dots', cursive; }
+      header .navbar.navbar-light.bg-color .container-fluid .navbar-brand:hover {
+        color: #f495e7;
+        text-shadow: 0 0 5px #f495e7, 0 0 25px #f495e7, 0 0 50px #f495e7, 0 0 100px #ffffff;
+        transition: 1.3s; }
+    header .navbar.navbar-light.bg-color .container-fluid .navbar-toggler {
+      color: #f495e7;
+      padding: 0px;
+      font-size: 1.25rem;
+      line-height: 1;
+      background-color: transparent;
+      border: 0px;
+      border-radius: 0px;
+      transition: none; }
+      header .navbar.navbar-light.bg-color .container-fluid .navbar-toggler:focus {
+        box-shadow: none; }
+    header .navbar.navbar-light.bg-color .container-fluid .collapse.navbar-collapse {
+      flex-grow: initial; }
+      header .navbar.navbar-light.bg-color .container-fluid .collapse.navbar-collapse .navbar-nav .nav-item .nav-link.active {
+        color: #00ffff; }
+        header .navbar.navbar-light.bg-color .container-fluid .collapse.navbar-collapse .navbar-nav .nav-item .nav-link.active:hover {
+          color: #f495e7;
+          text-shadow: 0 0 5px #f495e7, 0 0 25px #f495e7, 0 0 50px #f495e7, 0 0 100px #ffffff;
+          transition: 1.3s; }
+      header .navbar.navbar-light.bg-color .container-fluid .collapse.navbar-collapse .navbar-nav .nav-item .nav-link {
+        color: #00ffff;
+        font-size: 1rem;
+        font-family: 'Zen Dots', cursive; }
+        header .navbar.navbar-light.bg-color .container-fluid .collapse.navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+          color: #f495e7;
+          text-shadow: 0 0 5px #f495e7, 0 0 25px #f495e7, 0 0 50px #f495e7, 0 0 100px #ffffff;
+          transition: 1.3s; }
+      header .navbar.navbar-light.bg-color .container-fluid .collapse.navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu {
+        background: linear-gradient(0deg, black 0%, #790976 35%, #00b9ff 100%); }
+        header .navbar.navbar-light.bg-color .container-fluid .collapse.navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+          color: #00ffff; }
+          header .navbar.navbar-light.bg-color .container-fluid .collapse.navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+            color: #f495e7;
+            text-shadow: 0 0 25px #00ffff, 0 0 25px #f495e7, 0 0 50px #00ffff, 0 0 100px #f40b03;
+            transition: 1s;
+            background-color: #790976; }
+      header .navbar.navbar-light.bg-color .container-fluid .collapse.navbar-collapse .navbar-nav .nav-item .nav-link {
+        color: #00ffff;
+        font-size: 1rem;
+        font-family: 'Zen Dots', cursive; }
+
+.parallax {
+  background-image: url(../imagenes/parallax.jpg);
+  height: 1280px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.container__form {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  background-image: url(../imagenes/tokyo-city-aesthetic.gif);
+  height: 850px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .container__form form {
+    background: #00000099;
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    padding: 25px 35px;
+    padding-bottom: 30px;
+    border-radius: 3px; }
+    .container__form form .form__header .form__title {
+      font-weight: normal;
+      font-family: 'Zen Dots', cursive;
+      color: #00ffff;
+      text-align: center;
+      padding: 14px 0;
+      font-size: 20px; }
+      .container__form form .form__header .form__title span {
+        color: #f495e7; }
+    .container__form form .form__label {
+      display: block;
+      color: #00ffff;
+      font-size: 16px;
+      font-family: 'Zen Dots', cursive;
+      position: relative; }
+    .container__form form .form__textarea, .container__form form .form__input {
+      background: rgba(0, 0, 0, 0.7);
+      border: none;
+      outline: none;
+      border-bottom: 2px solid #f495e7;
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border-radius: 2px;
+      font-size: 14px;
+      color: #ff851b;
+      font-family: 'Zen Dots', cursive;
+      resize: vertical;
+      max-height: 150px;
+      min-height: 50px; }
+    .container__form form .btn__submit {
+      width: 100%;
+      font-family: 'Zen Dots', cursive;
+      outline: none;
+      background: #00ffff;
+      font-size: 16px;
+      border: none;
+      color: black;
+      padding: 15px 0;
+      cursor: pointer;
+      transition: all 1.3s ease; }
+      .container__form form .btn__submit:hover {
+        background: #f495e7;
+        color: cyan;
+        box-shadow: 0 0 5px #f495e7, 0 0 25px #f495e7, 0 0 50px #f495e7, 0 0 100px #f495e7; }
+
+footer {
+  margin-top: 0px; }
+  footer .footer-container {
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    align-content: space-between; }
+    footer .footer-container div .socials {
+      display: flex;
+      justify-content: center;
+      color: darkgrey;
+      margin-bottom: 10px;
+      padding-top: 30px;
+      font-family: 'Zen Dots', cursive;
+      font-size: 20px; }
+    footer .footer-container div .footer-menu {
+      padding-bottom: 30px; }
+      footer .footer-container div .footer-menu a {
+        color: #00ffff;
+        margin: 10px; }
+        footer .footer-container div .footer-menu a:hover {
+          color: #f495e7;
+          text-shadow: 0 0 5px #f495e7, 0 0 25px #f495e7, 0 0 50px #f495e7, 0 0 100px #ffffff;
+          transition: 1.3s; }
+  footer .Copyright {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: flex-end;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 4px;
+    box-shadow: 0 0 10px #f495e7;
+    background: linear-gradient(90deg, black 0%, #790976 35%, #00b9ff 100%); }

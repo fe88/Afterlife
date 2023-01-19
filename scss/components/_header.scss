@@ -1,0 +1,114 @@
+/*----HEADER----*/
+
+header {
+    top: 0px;
+
+    .navbar.navbar-light.bg-color {
+        box-shadow: 0 0 10px #f495e7;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(121, 9, 118, 1) 35%, rgba(0, 185, 255, 1) 100%);
+        .container-fluid {
+            .navbar-brand {
+                color: #f495e7 !important;
+                font-size: 1.5rem !important;
+                font-family: 'Zen Dots', cursive;
+
+                &:hover {
+                    color: rgb(244, 149, 231);
+                    text-shadow: 0 0 5px #f495e7,
+                        0 0 25px #f495e7,
+                        0 0 50px #f495e7,
+                        0 0 100px #ffffff;
+                    transition: 1.3s;
+                }
+            }
+
+            .navbar-toggler {
+                color: #f495e7;
+                padding: 0px;
+                font-size: 1.25rem;
+                line-height: 1;
+                background-color: transparent;
+                border: 0px;
+                border-radius: 0px;
+                transition: none;
+
+                &:focus {
+                    box-shadow: none;
+                }
+
+            }
+
+            .collapse.navbar-collapse {
+                flex-grow: initial;
+
+                .navbar-nav {
+                    .nav-item {
+                        .nav-link.active {
+                            color: #00ffff;
+
+                            &:hover {
+                                color: rgb(244, 149, 231);
+                                text-shadow: 0 0 5px #f495e7,
+                                    0 0 25px #f495e7,
+                                    0 0 50px #f495e7,
+                                    0 0 100px #ffffff;
+                                transition: 1.3s;
+                            }
+                        }
+
+                        .nav-link {
+                            color: #00ffff;
+                            font-size: 1rem;
+                            font-family: 'Zen Dots', cursive;
+
+                            &:hover {
+                                color: rgb(244, 149, 231);
+                                text-shadow: 0 0 5px #f495e7,
+                                    0 0 25px #f495e7,
+                                    0 0 50px #f495e7,
+                                    0 0 100px #ffffff;
+                                transition: 1.3s;
+                            }
+                        }
+                    }
+
+                    .nav-item.dropdown {
+                        .nav-link.dropdown-toggle {}
+
+                        .dropdown-menu {
+                            background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(121, 9, 118, 1) 35%, rgba(0, 185, 255, 1) 100%);
+
+                            .dropdown-item {
+                                color: #00ffff;
+
+                                &:hover {
+                                    color: rgb(244, 149, 231);
+                                    text-shadow: 0 0 25px #00ffff,
+                                        0 0 25px #f495e7,
+                                        0 0 50px #00ffff,
+                                        0 0 100px #f40b03;
+                                    transition: 1s;
+                                    background-color: rgba(121, 9, 118, 1);
+
+                                }
+                            }
+                        }
+
+                    }
+
+                    .nav-item {
+                        .nav-link {
+                            color: #00ffff;
+                            font-size: 1rem;
+                            font-family: 'Zen Dots', cursive;
+
+                        }
+                    }
+
+                }
+            }
+
+        }
+    }
+
+}

@@ -136,6 +136,13 @@ header {
         color: cyan;
         box-shadow: 0 0 5px #f495e7, 0 0 25px #f495e7, 0 0 50px #f495e7, 0 0 100px #f495e7; }
 
+.carrousel {
+  padding-top: 75px; }
+
+.carrousel2 {
+  padding-top: 75px;
+  display: none; }
+
 footer {
   margin-top: 0px; }
   footer .footer-container {

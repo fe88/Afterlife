@@ -4,21 +4,20 @@
     }
 
     .carrousel2 {
-        display: flex;
+        @extend %flex;
     }
 
     footer {
         .footer-container {
 
             .socials {
-                display: flex;
                 margin-top: 50px;
 
             }
 
             .footer-menu {
                 a {
-                    display: flex;
+                    @extend %flex;
                     justify-content: space-around;
                     margin-top: 5px;
                     padding: 5px;

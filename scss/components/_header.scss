@@ -8,24 +8,24 @@ header {
         background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(121, 9, 118, 1) 35%, rgba(0, 185, 255, 1) 100%);
         .container-fluid {
             .navbar-brand {
-                color: #f495e7 !important;
-                font-size: 1.5rem !important;
-                font-family: 'Zen Dots', cursive;
+                color:nth($colours, 1);
+                font-size: nth($font-size, 2);
+                font-family:nth($font-family, 1);
 
                 &:hover {
-                    color: rgb(244, 149, 231);
+                    color:nth($colours, 1);
                     text-shadow: 0 0 5px #f495e7,
                         0 0 25px #f495e7,
                         0 0 50px #f495e7,
                         0 0 100px #ffffff;
-                    transition: 1.3s;
+                        @extend %transition;
                 }
             }
 
             .navbar-toggler {
-                color: #f495e7;
+                color:nth($colours, 1);
                 padding: 0px;
-                font-size: 1.25rem;
+                font-size: nth($font-size, 3);
                 line-height: 1;
                 background-color: transparent;
                 border: 0px;
@@ -44,30 +44,30 @@ header {
                 .navbar-nav {
                     .nav-item {
                         .nav-link.active {
-                            color: #00ffff;
+                            color:nth($colours, 4);
 
                             &:hover {
-                                color: rgb(244, 149, 231);
+                                color:nth($colours, 1);
                                 text-shadow: 0 0 5px #f495e7,
                                     0 0 25px #f495e7,
                                     0 0 50px #f495e7,
                                     0 0 100px #ffffff;
-                                transition: 1.3s;
+                                    @extend %transition;
                             }
                         }
 
                         .nav-link {
-                            color: #00ffff;
-                            font-size: 1rem;
-                            font-family: 'Zen Dots', cursive;
+                            color:nth($colours, 4);
+                            font-size: nth($font-size, 1);
+                            font-family:nth($font-family, 1);
 
                             &:hover {
-                                color: rgb(244, 149, 231);
+                                color:nth($colours, 1);
                                 text-shadow: 0 0 5px #f495e7,
                                     0 0 25px #f495e7,
                                     0 0 50px #f495e7,
                                     0 0 100px #ffffff;
-                                transition: 1.3s;
+                                    @extend %transition;
                             }
                         }
                     }
@@ -79,16 +79,18 @@ header {
                             background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(121, 9, 118, 1) 35%, rgba(0, 185, 255, 1) 100%);
 
                             .dropdown-item {
-                                color: #00ffff;
+                                color:nth($colours, 4);
+                                font-family:nth($font-family, 1);
+                                font-size:nth($font-size, 1) ;
 
                                 &:hover {
-                                    color: rgb(244, 149, 231);
+                                    color:nth($colours, 1);
                                     text-shadow: 0 0 25px #00ffff,
                                         0 0 25px #f495e7,
                                         0 0 50px #00ffff,
                                         0 0 100px #f40b03;
                                     transition: 1s;
-                                    background-color: rgba(121, 9, 118, 1);
+                                    background-color: nth($bg,2 );
 
                                 }
                             }
@@ -98,9 +100,9 @@ header {
 
                     .nav-item {
                         .nav-link {
-                            color: #00ffff;
-                            font-size: 1rem;
-                            font-family: 'Zen Dots', cursive;
+                            color:nth($colours, 4);
+                            font-size: nth($font-size, 1);
+                            font-family:nth($font-family, 1);
 
                         }
                     }

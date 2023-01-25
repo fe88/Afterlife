@@ -1,0 +1,75 @@
+//!colours
+
+$colours: #f495e7,
+    #f006d1,
+    #ffffff,
+    #00ffff,
+    #790976,
+    #f40b03,
+    #ff851b,
+    darkgrey,
+    black;
+
+//!font size
+
+$font-size: 1rem,
+    1.5rem,
+    1.25rem,
+    3rem,
+    14px,
+    15px,
+    16px,
+    20px;
+
+$font-family: 'Zen Dots', cursive;
+
+$bg: #f495e7,
+    #790976,
+    #00000099;
+//!maps
+//key - value
+
+$button: (
+    btn-bg:#00ffff,
+    btn-width:100%,
+    btn-border:none,
+    btn-background-hover:#f495e7,
+    btn-cursor:pointer,
+    btn-padding:15px 0,
+);
+
+//! extends
+%transition {
+    transition: all 1.3s ease;
+}
+
+;
+
+%flex {
+    display: flex;
+}
+
+;
+
+//!mixin
+
+@mixin flex($flex, $justify, $align, $direction) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+
+}
+
+;
+
+@mixin grid($grid, $grid-tc, $grid-ar, $gap) {
+    display: $grid;
+    grid-template-columns: $grid-tc;
+    grid-auto-rows: $grid-ar;
+    gap: $gap;
+
+
+}
+
+;

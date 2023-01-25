@@ -8,6 +8,9 @@ body {
   background-color: black;
   min-height: 100vh; }
 
+header .navbar.navbar-light.bg-color .container-fluid .navbar-brand:hover, header .navbar.navbar-light.bg-color .container-fluid .collapse.navbar-collapse .navbar-nav .nav-item .nav-link.active:hover, header .navbar.navbar-light.bg-color .container-fluid .collapse.navbar-collapse .navbar-nav .nav-item .nav-link:hover, .container__form form .btn__submit, footer .footer-container div .footer-menu a:hover {
+  transition: all 1.3s ease; }
+
 /*----HEADER----*/
 header {
   top: 0px; }
@@ -15,13 +18,12 @@ header {
     box-shadow: 0 0 10px #f495e7;
     background: linear-gradient(90deg, black 0%, #790976 35%, #00b9ff 100%); }
     header .navbar.navbar-light.bg-color .container-fluid .navbar-brand {
-      color: #f495e7 !important;
-      font-size: 1.5rem !important;
-      font-family: 'Zen Dots', cursive; }
+      color: #f495e7;
+      font-size: 1.5rem;
+      font-family: "Zen Dots"; }
       header .navbar.navbar-light.bg-color .container-fluid .navbar-brand:hover {
         color: #f495e7;
-        text-shadow: 0 0 5px #f495e7, 0 0 25px #f495e7, 0 0 50px #f495e7, 0 0 100px #ffffff;
-        transition: 1.3s; }
+        text-shadow: 0 0 5px #f495e7, 0 0 25px #f495e7, 0 0 50px #f495e7, 0 0 100px #ffffff; }
     header .navbar.navbar-light.bg-color .container-fluid .navbar-toggler {
       color: #f495e7;
       padding: 0px;
@@ -39,20 +41,20 @@ header {
         color: #00ffff; }
         header .navbar.navbar-light.bg-color .container-fluid .collapse.navbar-collapse .navbar-nav .nav-item .nav-link.active:hover {
           color: #f495e7;
-          text-shadow: 0 0 5px #f495e7, 0 0 25px #f495e7, 0 0 50px #f495e7, 0 0 100px #ffffff;
-          transition: 1.3s; }
+          text-shadow: 0 0 5px #f495e7, 0 0 25px #f495e7, 0 0 50px #f495e7, 0 0 100px #ffffff; }
       header .navbar.navbar-light.bg-color .container-fluid .collapse.navbar-collapse .navbar-nav .nav-item .nav-link {
         color: #00ffff;
         font-size: 1rem;
-        font-family: 'Zen Dots', cursive; }
+        font-family: "Zen Dots"; }
         header .navbar.navbar-light.bg-color .container-fluid .collapse.navbar-collapse .navbar-nav .nav-item .nav-link:hover {
           color: #f495e7;
-          text-shadow: 0 0 5px #f495e7, 0 0 25px #f495e7, 0 0 50px #f495e7, 0 0 100px #ffffff;
-          transition: 1.3s; }
+          text-shadow: 0 0 5px #f495e7, 0 0 25px #f495e7, 0 0 50px #f495e7, 0 0 100px #ffffff; }
       header .navbar.navbar-light.bg-color .container-fluid .collapse.navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu {
         background: linear-gradient(0deg, black 0%, #790976 35%, #00b9ff 100%); }
         header .navbar.navbar-light.bg-color .container-fluid .collapse.navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
-          color: #00ffff; }
+          color: #00ffff;
+          font-family: "Zen Dots";
+          font-size: 1rem; }
           header .navbar.navbar-light.bg-color .container-fluid .collapse.navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
             color: #f495e7;
             text-shadow: 0 0 25px #00ffff, 0 0 25px #f495e7, 0 0 50px #00ffff, 0 0 100px #f40b03;
@@ -61,7 +63,7 @@ header {
       header .navbar.navbar-light.bg-color .container-fluid .collapse.navbar-collapse .navbar-nav .nav-item .nav-link {
         color: #00ffff;
         font-size: 1rem;
-        font-family: 'Zen Dots', cursive; }
+        font-family: "Zen Dots"; }
 
 .parallax {
   background-image: url(../imagenes/parallax.jpg);
@@ -74,7 +76,8 @@ header {
 .container__form {
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
+  flex-direction: row;
   margin: 0 auto;
   background-image: url(../imagenes/tokyo-city-aesthetic.gif);
   height: 850px;
@@ -92,7 +95,7 @@ header {
     border-radius: 3px; }
     .container__form form .form__header .form__title {
       font-weight: normal;
-      font-family: 'Zen Dots', cursive;
+      font-family: "Zen Dots";
       color: #00ffff;
       text-align: center;
       padding: 14px 0;
@@ -103,7 +106,7 @@ header {
       display: block;
       color: #00ffff;
       font-size: 16px;
-      font-family: 'Zen Dots', cursive;
+      font-family: "Zen Dots";
       position: relative; }
     .container__form form .form__textarea, .container__form form .form__input {
       background: rgba(0, 0, 0, 0.7);
@@ -116,24 +119,23 @@ header {
       border-radius: 2px;
       font-size: 14px;
       color: #ff851b;
-      font-family: 'Zen Dots', cursive;
+      font-family: "Zen Dots";
       resize: vertical;
       max-height: 150px;
       min-height: 50px; }
     .container__form form .btn__submit {
       width: 100%;
-      font-family: 'Zen Dots', cursive;
+      font-family: "Zen Dots";
       outline: none;
       background: #00ffff;
       font-size: 16px;
       border: none;
       color: black;
       padding: 15px 0;
-      cursor: pointer;
-      transition: all 1.3s ease; }
+      cursor: pointer; }
       .container__form form .btn__submit:hover {
         background: #f495e7;
-        color: cyan;
+        color: #00ffff;
         box-shadow: 0 0 5px #f495e7, 0 0 25px #f495e7, 0 0 50px #f495e7, 0 0 100px #f495e7; }
 
 .carrousel {
@@ -149,14 +151,17 @@ footer {
     gap: 2rem;
     display: flex;
     justify-content: center;
-    align-content: space-between; }
+    align-items: space-between;
+    flex-direction: row; }
     footer .footer-container div .socials {
       display: flex;
       justify-content: center;
+      align-items: center;
+      flex-direction: row;
       color: darkgrey;
       margin-bottom: 10px;
       padding-top: 30px;
-      font-family: 'Zen Dots', cursive;
+      font-family: "Zen Dots";
       font-size: 20px; }
     footer .footer-container div .footer-menu {
       padding-bottom: 30px; }
@@ -165,15 +170,52 @@ footer {
         margin: 10px; }
         footer .footer-container div .footer-menu a:hover {
           color: #f495e7;
-          text-shadow: 0 0 5px #f495e7, 0 0 25px #f495e7, 0 0 50px #f495e7, 0 0 100px #ffffff;
-          transition: 1.3s; }
+          text-shadow: 0 0 5px #f495e7, 0 0 25px #f495e7, 0 0 50px #f495e7, 0 0 100px #ffffff; }
   footer .Copyright {
     display: flex;
     justify-content: center;
-    text-align: center;
     align-items: flex-end;
+    flex-direction: row;
+    text-align: center;
     font-size: 15px;
     margin-top: 20px;
     margin-bottom: 4px;
     box-shadow: 0 0 10px #f495e7;
     background: linear-gradient(90deg, black 0%, #790976 35%, #00b9ff 100%); }
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 300px;
+  gap: 23px;
+  padding: 20px; }
+  .gallery-container .gallery__item:nth-child(3) {
+    grid-row-start: span 3; }
+  .gallery-container .gallery__item:nth-child(4) {
+    grid-column-start: span 2;
+    grid-row-start: span 4; }
+  .gallery-container .gallery__item:nth-child(7) {
+    grid-row-start: span 2; }
+  .gallery-container .gallery__item .gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 0 10px #00ffff; }
+
+.gallery-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .gallery-name h1 {
+    margin-bottom: 0px;
+    font-size: 3rem;
+    font-weight: normal;
+    font-family: "Zen Dots";
+    color: #f495e7;
+    text-shadow: 0 0 5px #f495e7, 0 0 25px #f495e7, 0 0 50px #f495e7, 0 0 100px #f006d1; }
+
+header .navbar.navbar-light.bg-color .container-fluid .navbar-brand:hover, header .navbar.navbar-light.bg-color .container-fluid .collapse.navbar-collapse .navbar-nav .nav-item .nav-link.active:hover, header .navbar.navbar-light.bg-color .container-fluid .collapse.navbar-collapse .navbar-nav .nav-item .nav-link:hover, .container__form form .btn__submit, footer .footer-container div .footer-menu a:hover {
+  transition: all 1.3s ease; }

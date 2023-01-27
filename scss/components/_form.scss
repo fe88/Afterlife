@@ -20,29 +20,30 @@
         .form__header {
             .form__title {
                 font-weight: normal;
-                font-family:nth($font-family, 1);
-                color:nth($colours, 4);
+                font-family: nth($font-family, 1);
+                color: nth($colours, 4);
                 text-align: center;
                 padding: 14px 0;
                 font-size: nth($font-size, 8);
 
                 span {
-                    color:nth($colours, 1);
+                    color: nth($colours, 1);
                 }
             }
         }
 
         .form__label {
             display: block;
-            color:nth($colours, 4);
+            color: nth($colours, 4);
             font-size: nth($font-size, 7);
-            font-family:nth($font-family, 1);
+            font-family: nth($font-family, 1);
             position: relative;
         }
 
-      
 
-        .form__textarea,.form__input {
+
+        .form__textarea,
+        .form__input {
             background: rgba(0, 0, 0, .7);
             border: none;
             outline: none;
@@ -52,28 +53,28 @@
             margin-bottom: 20px;
             border-radius: 2px;
             font-size: nth($font-size, 5);
-            color:nth($colours, 7);
-            font-family:nth($font-family, 1);
+            color: nth($colours, 7);
+            font-family: nth($font-family, 1);
             resize: vertical;
             max-height: 150px;
             min-height: 50px;
         }
 
         .btn__submit {
-            width: map-get($button,btn-width);
-            font-family:nth($font-family, 1);
+            width: map-get($button, btn-width);
+            font-family: nth($font-family, 1);
             outline: none;
-            background:map-get($button,btn-bg);
+            background: map-get($button, btn-bg);
             font-size: nth($font-size, 7);
-            border: map-get($button,btn-border);
-            color:nth($colours, 9);
-            padding:map-get($button,btn-padding);
-            cursor: map-get($button,btn-cursor);
+            border: map-get($button, btn-border);
+            color: nth($colours, 9);
+            padding: map-get($button, btn-padding);
+            cursor: map-get($button, btn-cursor);
             @extend %transition;
 
             &:hover {
                 background: #f495e7;
-                color:nth($colours, 4);
+                color: nth($colours, 4);
                 box-shadow: 0 0 5px #f495e7,
                     0 0 25px #f495e7,
                     0 0 50px #f495e7,

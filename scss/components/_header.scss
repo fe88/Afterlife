@@ -6,24 +6,25 @@ header {
     .navbar.navbar-light.bg-color {
         box-shadow: 0 0 10px #f495e7;
         background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(121, 9, 118, 1) 35%, rgba(0, 185, 255, 1) 100%);
+
         .container-fluid {
             .navbar-brand {
-                color:nth($colours, 1);
+                color: nth($colours, 1);
                 font-size: nth($font-size, 2);
-                font-family:nth($font-family, 1);
+                font-family: nth($font-family, 1);
 
                 &:hover {
-                    color:nth($colours, 1);
+                    color: nth($colours, 1);
                     text-shadow: 0 0 5px #f495e7,
                         0 0 25px #f495e7,
                         0 0 50px #f495e7,
                         0 0 100px #ffffff;
-                        @extend %transition;
+                    @extend %transition;
                 }
             }
 
             .navbar-toggler {
-                color:nth($colours, 1);
+                color: nth($colours, 1);
                 padding: 0px;
                 font-size: nth($font-size, 3);
                 line-height: 1;
@@ -44,53 +45,53 @@ header {
                 .navbar-nav {
                     .nav-item {
                         .nav-link.active {
-                            color:nth($colours, 4);
+                            color: nth($colours, 4);
 
                             &:hover {
-                                color:nth($colours, 1);
+                                color: nth($colours, 1);
                                 text-shadow: 0 0 5px #f495e7,
                                     0 0 25px #f495e7,
                                     0 0 50px #f495e7,
                                     0 0 100px #ffffff;
-                                    @extend %transition;
+                                @extend %transition;
                             }
                         }
 
                         .nav-link {
-                            color:nth($colours, 4);
+                            color: nth($colours, 4);
                             font-size: nth($font-size, 1);
-                            font-family:nth($font-family, 1);
+                            font-family: nth($font-family, 1);
 
                             &:hover {
-                                color:nth($colours, 1);
+                                color: nth($colours, 1);
                                 text-shadow: 0 0 5px #f495e7,
                                     0 0 25px #f495e7,
                                     0 0 50px #f495e7,
                                     0 0 100px #ffffff;
-                                    @extend %transition;
+                                @extend %transition;
                             }
                         }
                     }
 
                     .nav-item.dropdown {
-                        
+
 
                         .dropdown-menu {
                             background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(121, 9, 118, 1) 35%, rgba(0, 185, 255, 1) 100%);
 
                             .dropdown-item {
-                                color:nth($colours, 4);
-                                font-family:nth($font-family, 1);
-                                font-size:nth($font-size, 1) ;
+                                color: nth($colours, 4);
+                                font-family: nth($font-family, 1);
+                                font-size: nth($font-size, 1);
 
                                 &:hover {
-                                    color:nth($colours, 1);
+                                    color: nth($colours, 1);
                                     text-shadow: 0 0 25px #00ffff,
                                         0 0 25px #f495e7,
                                         0 0 50px #00ffff,
                                         0 0 100px #f40b03;
                                     transition: 1s;
-                                    background-color: nth($bg,2 );
+                                    background-color: nth($bg, 2);
 
                                 }
                             }
@@ -100,9 +101,9 @@ header {
 
                     .nav-item {
                         .nav-link {
-                            color:nth($colours, 4);
+                            color: nth($colours, 4);
                             font-size: nth($font-size, 1);
-                            font-family:nth($font-family, 1);
+                            font-family: nth($font-family, 1);
 
                         }
                     }

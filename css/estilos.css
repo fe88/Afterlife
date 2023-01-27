@@ -108,7 +108,8 @@ header {
       font-size: 16px;
       font-family: "Zen Dots";
       position: relative; }
-    .container__form form .form__textarea, .container__form form .form__input {
+    .container__form form .form__textarea,
+    .container__form form .form__input {
       background: rgba(0, 0, 0, 0.7);
       border: none;
       outline: none;

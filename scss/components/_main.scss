@@ -1,16 +1,18 @@
-.gallery-name{ 
+.gallery-name {
   @include flex (flex, center, center, row);
-    margin-top: 50px;
-    margin-bottom: 50px;
-h1{ margin-bottom: 0px;
-  font-size: nth($font-size, 4);
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  h1 {
+    margin-bottom: 0px;
+    font-size: nth($font-size, 4);
     font-weight: normal;
-    font-family:nth($font-family ,1 );
-    color:nth($colours, 1);
+    font-family: nth($font-family , 1);
+    color: nth($colours, 1);
     text-shadow: 0 0 5px #f495e7,
       0 0 25px #f495e7,
       0 0 50px #f495e7,
       0 0 100px #f006d1;
-    
-}
+
+  }
 }

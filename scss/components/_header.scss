@@ -73,31 +73,6 @@ header {
                         }
                     }
 
-                    .nav-item.dropdown {
-
-
-                        .dropdown-menu {
-                            background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(121, 9, 118, 1) 35%, rgba(0, 185, 255, 1) 100%);
-
-                            .dropdown-item {
-                                color: nth($colours, 4);
-                                font-family: nth($font-family, 1);
-                                font-size: nth($font-size, 9);
-
-                                &:hover {
-                                    color: nth($colours, 1);
-                                    text-shadow: 0 0 25px #00ffff,
-                                        0 0 25px #f495e7,
-                                        0 0 50px #00ffff,
-                                        0 0 100px #f40b03;
-                                    transition: 1s;
-                                    background-color: nth($bg, 2);
-
-                                }
-                            }
-                        }
-
-                    }
 
                     .nav-item {
                         .nav-link {

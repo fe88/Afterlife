@@ -8,7 +8,7 @@ body {
   background-color: black;
   min-height: 100vh; }
 
-header .navbar.navbar-light.bg-color .container-fluid .navbar-brand:hover, header .navbar.navbar-light.bg-color .container-fluid .collapse.navbar-collapse .navbar-nav .nav-item .nav-link.active:hover, header .navbar.navbar-light.bg-color .container-fluid .collapse.navbar-collapse .navbar-nav .nav-item .nav-link:hover, .container__form form .btn__submit, footer .footer-container .footer-menu a:hover {
+header .navbar.navbar-light.bg-color .container-fluid .navbar-brand:hover, header .navbar.navbar-light.bg-color .container-fluid .collapse.navbar-collapse .navbar-nav .nav-item .nav-link.active:hover, header .navbar.navbar-light.bg-color .container-fluid .collapse.navbar-collapse .navbar-nav .nav-item .nav-link:hover, .container__form form .btn__submit, footer .footer-container .footer-menu a:hover, a .button button:hover {
   transition: all 1.3s ease; }
 
 /*----HEADER----*/
@@ -49,29 +49,10 @@ header {
         header .navbar.navbar-light.bg-color .container-fluid .collapse.navbar-collapse .navbar-nav .nav-item .nav-link:hover {
           color: #f495e7;
           text-shadow: 0 0 5px #f495e7, 0 0 25px #f495e7, 0 0 50px #f495e7, 0 0 100px #ffffff; }
-      header .navbar.navbar-light.bg-color .container-fluid .collapse.navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu {
-        background: linear-gradient(0deg, black 0%, #790976 35%, #00b9ff 100%); }
-        header .navbar.navbar-light.bg-color .container-fluid .collapse.navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
-          color: #00ffff;
-          font-family: "Zen Dots";
-          font-size: 13px; }
-          header .navbar.navbar-light.bg-color .container-fluid .collapse.navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
-            color: #f495e7;
-            text-shadow: 0 0 25px #00ffff, 0 0 25px #f495e7, 0 0 50px #00ffff, 0 0 100px #f40b03;
-            transition: 1s;
-            background-color: #790976; }
       header .navbar.navbar-light.bg-color .container-fluid .collapse.navbar-collapse .navbar-nav .nav-item .nav-link {
         color: #00ffff;
         font-size: 1rem;
         font-family: "Zen Dots"; }
-
-.parallax {
-  background-image: url(../imagenes/parallax.jpg);
-  height: 1280px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
 
 .container__form {
   padding: 0px 2rem 0px 2rem;
@@ -337,6 +318,29 @@ footer {
         line-height: 28px;
         font-size: 18px;
         margin-bottom: 45px; }
+
+a {
+  text-decoration: none; }
+  a .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0px 2rem 0px 2rem;
+    width: 400px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 3rem; }
+    a .button button {
+      width: 100%;
+      height: 100%;
+      background: #00000099;
+      color: #f495e7;
+      font-size: 1.5rem;
+      font-family: "Zen Dots"; }
+      a .button button:hover {
+        color: #f495e7;
+        text-shadow: 0 0 5px #f495e7, 0 0 25px #f495e7, 0 0 50px #f495e7; }
 
 @media only screen and (max-width: 1200px) {
   .container-card {

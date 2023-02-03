@@ -1,11 +1,9 @@
 footer {
     margin-top: 0px;
-
     .footer-container {
-        gap: 2rem;
-        @include flex(flex, center, space-between, row);
+        padding: map-get($principal-container,padding-container);
+        @include flex(flex, center, space-between, column);
 
-        div {
             .socials {
                 @include flex(flex, center, center, row);
                 color: nth($colours, 8);
@@ -17,7 +15,7 @@ footer {
 
             .footer-menu {
                 padding-bottom: 30px;
-
+                @include flex(flex, center, center, row);
                 a {
                     color: nth($colours, 4);
                     margin: 10px;
@@ -38,12 +36,9 @@ footer {
     .Copyright {
         @include flex(flex, center, flex-end, row);
         text-align: center;
-
         font-size: nth($font-size, 6);
         margin-top: 20px;
-        margin-bottom: 4px;
         box-shadow: 0 0 10px #f495e7;
         background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(121, 9, 118, 1) 35%, rgba(0, 185, 255, 1) 100%);
 
     }
-}

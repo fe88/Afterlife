@@ -1,0 +1,47 @@
+.about {
+    padding: map-get($principal-container, padding-container);
+    width: 100%;
+    padding: 78px;
+    background-color: #191919;
+
+    .main {
+        width: 1130px;
+        max-width: 95%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        img {
+            height: auto;
+            width:420px;
+        }
+
+        .about-text {width: 550px;
+            h1 {
+                color:nth($colours ,3 );
+                font-size: nth($font-size ,11);
+                text-transform: capitalize;
+                margin-bottom: 20px;
+            }
+
+            h2 {
+                color: nth($colours ,3 );
+                font-size: nth($font-size ,10);
+                text-transform: capitalize;
+                margin-bottom: 25px;
+                letter-spacing: 2px;
+            }
+            span{
+                color:nth($colours,1);
+            }
+
+            .aboutp {
+                color:nth($colours,8 );
+                letter-spacing: 1px;
+                line-height: 28px;
+                font-size:nth($font-size ,12 );
+                margin-bottom: 45px;
+            }
+        }
+    }
+}

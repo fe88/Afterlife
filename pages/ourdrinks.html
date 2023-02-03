@@ -15,14 +15,14 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!--CSS-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="../estilos/main.css">
+  <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-color">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Afterlife</a>
+        <a class="navbar-brand" href="../index.html">Afterlife</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -35,17 +35,9 @@
             <li class="nav-item">
               <a class="nav-link" href="./meetourcrew.html">Meet our crew</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Our unique drinks
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="./ourdrinks.html">All drinks</a></li>
-                <li><a class="dropdown-item" href="#">The Johnny Silverhand</a></li>
-                <li><a class="dropdown-item" href="#">The Jackie Walles</a></li>
-                <li><a class="dropdown-item" href="#">The David Martinez</a></li>
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="./ourdrinks.html">Our unique cocktails</a>
+            </li>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./workwithus.html" tabindex="-1" aria-disabled="true">Work with us</a>
@@ -58,66 +50,128 @@
       </div>
     </nav>
   </header>
+  <!-------cards------->
   <main>
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-          </div>
+    <section class="container-card">
+      <div class="card">
+        <div class="face front">
+          <img src="../imagenes/drink1.jpg" alt="">
+          <h3>The Johnny Silverhand</h3>
         </div>
-        <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+        <div class="face back">
+          <h3>The Johnny Silverhand</h3>
+          <p>His drink consists of a tequila old fashioned with a splash of beer and a chili garnish. This fiery hot
+            drink
+            matches the incendiary Johnny Silverhand's personality.</p>
+          <div class="link">
+            <a href="#">details</a>
           </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <section class="parallax">
+      <div class="card">
+        <div class="face front">
+          <img src="../imagenes/drink2.jpg" alt="">
+          <h3>The Jackie Walles</h3>
+        </div>
+        <div class="face back">
+          <h3>The jackie Walles</h3>
+          <p>A mix consisting of a shot of vodka, lime juice, ginger beer, and most importantly "a
+            splash of love". </p>
+          <div class="link">
+            <a href="#">details</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="face front">
+          <img src="../imagenes/drink3.jpg" alt="">
+          <h3>The David Martinez</h3>
+        </div>
+        <div class="face back">
+          <h3>The David Martinez</h3>
+          <p>A simple one with an ironic twist: vodka on the rocks topped with NiCola.</p>
+          <div class="link">
+            <a href="#">details</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="face front">
+          <img src="../imagenes/drink4.jpg" alt="">
+          <h3>The Dorio</h3>
+        </div>
+        <div class="face back">
+          <h3>The Dorio</h3>
+          <p>The Dorio is a classy cocktail made with gin, lemon, simple syrup, egg white and soda water.</p>
+          <div class="link">
+            <a href="#">details</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="face front">
+          <img src="../imagenes/drink5.jpg" alt="">
+          <h3>The Lucyna Kushinada</h3>
+        </div>
+        <div class="face back">
+          <h3>The Lucyna Kushinada</h3>
+          <p>Tequila with ice, pineapple juice, blue curaçao and a beautiful cherry garnish.</p>
+          <div class="link">
+            <a href="#">details</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="face front">
+          <img src="../imagenes/drink6.jpg" alt="">
+          <h3>The Maine</h3>
+        </div>
+        <div class="face back">
+          <h3>The Maine</h3>
+          <p> Rough and tough this cocktail is ready to give you a cyberpyschosis, includes whiskey, absinthe, and Peychaud's Bitters.</p>
+          <div class="link">
+            <a href="#">details</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="face front">
+          <img src="../imagenes/drink7.jpg" alt="">
+          <h3>The Rebecca</h3>
+        </div>
+        <div class="face back">
+          <h3>The Rebecca</h3>
+          <p>Extreme and unpredictable as her, this cocktail includes lime juice, vodka, ginger beer, and butterfly pea flower tea.</p>
+          <div class="link">
+            <a href="#">details</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="face front">
+          <img src="../imagenes/drink8.jpg" alt="">
+          <h3>The Kiwi</h3>
+        </div>
+        <div class="face back">
+          <h3>The Kiwi</h3>
+          <p>This enigmatic and snarky cocktail combines the flowery taste of gin and voignier with sweet kiwi.</p>
+          <div class="link">
+            <a href="#">details</a>
+          </div>
+        </div>
+      </div>
     </section>
-
   </main>
   <!-----Footer----->
   <footer>
     <div class="footer-container">
-      <div>
-        <h3 class="socials">Socials</h3>
-        <nav class="footer-menu">
-          <a href="#"><i class="fa fa-facebook"></i>フェイスブック</a>
-          <a href="#"><i class="fa fa-twitter"></i>ツイッター</a>
-          <a href="#"><i class="fa fa-instagram"></i>インスタグラム</a>
-          <a href="#"><i class="fa fa-youtube"></i>ユーチューブ</a>
-        </nav>
-      </div>
+      <h3 class="socials">Socials</h3>
+      <nav class="footer-menu">
+        <a href="#"><i class="fa fa-facebook"></i>フェイスブック</a>
+        <a href="#"><i class="fa fa-twitter"></i>ツイッター</a>
+        <a href="#"><i class="fa fa-instagram"></i>インスタグラム</a>
+        <a href="#"><i class="fa fa-youtube"></i>ユーチューブ</a>
+      </nav>
     </div>
     <h3 class="Copyright">Copyright all rights reserved &#169</h3>
   </footer>

@@ -82,7 +82,7 @@ header {
                             .dropdown-item {
                                 color: nth($colours, 4);
                                 font-family: nth($font-family, 1);
-                                font-size: nth($font-size, 1);
+                                font-size: nth($font-size, 9);
 
                                 &:hover {
                                     color: nth($colours, 1);

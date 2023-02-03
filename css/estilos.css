@@ -8,7 +8,7 @@ body {
   background-color: black;
   min-height: 100vh; }
 
-header .navbar.navbar-light.bg-color .container-fluid .navbar-brand:hover, header .navbar.navbar-light.bg-color .container-fluid .collapse.navbar-collapse .navbar-nav .nav-item .nav-link.active:hover, header .navbar.navbar-light.bg-color .container-fluid .collapse.navbar-collapse .navbar-nav .nav-item .nav-link:hover, .container__form form .btn__submit, footer .footer-container div .footer-menu a:hover {
+header .navbar.navbar-light.bg-color .container-fluid .navbar-brand:hover, header .navbar.navbar-light.bg-color .container-fluid .collapse.navbar-collapse .navbar-nav .nav-item .nav-link.active:hover, header .navbar.navbar-light.bg-color .container-fluid .collapse.navbar-collapse .navbar-nav .nav-item .nav-link:hover, .container__form form .btn__submit, footer .footer-container .footer-menu a:hover {
   transition: all 1.3s ease; }
 
 /*----HEADER----*/
@@ -54,7 +54,7 @@ header {
         header .navbar.navbar-light.bg-color .container-fluid .collapse.navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
           color: #00ffff;
           font-family: "Zen Dots";
-          font-size: 1rem; }
+          font-size: 13px; }
           header .navbar.navbar-light.bg-color .container-fluid .collapse.navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
             color: #f495e7;
             text-shadow: 0 0 25px #00ffff, 0 0 25px #f495e7, 0 0 50px #00ffff, 0 0 100px #f40b03;
@@ -141,6 +141,11 @@ header {
 
 .carrousel {
   padding-top: 75px; }
+  .carrousel h5, .carrousel p {
+    font-family: "Zen Dots";
+    background: #00ffff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
 
 .carrousel2 {
   padding-top: 75px;
@@ -149,12 +154,12 @@ header {
 footer {
   margin-top: 0px; }
   footer .footer-container {
-    gap: 2rem;
+    padding: 0px 2rem 0px 2rem;
     display: flex;
     justify-content: center;
     align-items: space-between;
-    flex-direction: row; }
-    footer .footer-container div .socials {
+    flex-direction: column; }
+    footer .footer-container .socials {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -164,25 +169,29 @@ footer {
       padding-top: 30px;
       font-family: "Zen Dots";
       font-size: 20px; }
-    footer .footer-container div .footer-menu {
-      padding-bottom: 30px; }
-      footer .footer-container div .footer-menu a {
+    footer .footer-container .footer-menu {
+      padding-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row; }
+      footer .footer-container .footer-menu a {
         color: #00ffff;
         margin: 10px; }
-        footer .footer-container div .footer-menu a:hover {
+        footer .footer-container .footer-menu a:hover {
           color: #f495e7;
           text-shadow: 0 0 5px #f495e7, 0 0 25px #f495e7, 0 0 50px #f495e7, 0 0 100px #ffffff; }
-  footer .Copyright {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    flex-direction: row;
-    text-align: center;
-    font-size: 15px;
-    margin-top: 20px;
-    margin-bottom: 4px;
-    box-shadow: 0 0 10px #f495e7;
-    background: linear-gradient(90deg, black 0%, #790976 35%, #00b9ff 100%); }
+
+.Copyright {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: row;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px #f495e7;
+  background: linear-gradient(90deg, black 0%, #790976 35%, #00b9ff 100%); }
 
 .gallery-container {
   display: grid;
@@ -218,5 +227,123 @@ footer {
     color: #f495e7;
     text-shadow: 0 0 5px #f495e7, 0 0 25px #f495e7, 0 0 50px #f495e7, 0 0 100px #f006d1; }
 
-header .navbar.navbar-light.bg-color .container-fluid .navbar-brand:hover, header .navbar.navbar-light.bg-color .container-fluid .collapse.navbar-collapse .navbar-nav .nav-item .nav-link.active:hover, header .navbar.navbar-light.bg-color .container-fluid .collapse.navbar-collapse .navbar-nav .nav-item .nav-link:hover, .container__form form .btn__submit, footer .footer-container div .footer-menu a:hover {
-  transition: all 1.3s ease; }
+.container-card {
+  padding: 0px 2rem 0px 2rem;
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 450px;
+  gap: 20px; }
+  .container-card .card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    position: relative;
+    width: 100%;
+    height: 450px; }
+    .container-card .card:hover .front {
+      transform: perspective(600px) rotateY(180deg); }
+    .container-card .card:hover .back {
+      transform: perspective(600px) rotateY(360deg); }
+    .container-card .card .face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: .5s; }
+    .container-card .card .front {
+      transform: perspective(600px) rotateY(0deg);
+      box-shadow: 0 5px 10px #000; }
+      .container-card .card .front img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+      .container-card .card .front h3 {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 45px;
+        line-height: 45px;
+        color: #ffffff;
+        background: rgba(0, 0, 0, 0.4);
+        text-align: center;
+        font-family: "Zen Dots"; }
+    .container-card .card .back {
+      transform: perspective(600px) rotateY(180deg);
+      background: #00000099;
+      padding: 15px;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      box-shadow: 0 5px 10px #000; }
+      .container-card .card .back h3 {
+        font-size: 30px;
+        margin-top: 20px;
+        letter-spacing: 2px;
+        font-family: "Zen Dots"; }
+      .container-card .card .back p {
+        letter-spacing: 1px;
+        font-family: "Zen Dots"; }
+      .container-card .card .back .link {
+        border-top: solid 1px #f3f3f3;
+        height: 50px;
+        line-height: 50px; }
+        .container-card .card .back .link a {
+          color: #f495e7; }
+
+.about {
+  padding: 0px 2rem 0px 2rem;
+  width: 100%;
+  padding: 78px;
+  background-color: #191919; }
+  .about .main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    .about .main img {
+      height: auto;
+      width: 420px; }
+    .about .main .about-text {
+      width: 550px; }
+      .about .main .about-text h1 {
+        color: #ffffff;
+        font-size: 80px;
+        text-transform: capitalize;
+        margin-bottom: 20px; }
+      .about .main .about-text h2 {
+        color: #ffffff;
+        font-size: 25px;
+        text-transform: capitalize;
+        margin-bottom: 25px;
+        letter-spacing: 2px; }
+      .about .main .about-text span {
+        color: #f495e7; }
+      .about .main .about-text .aboutp {
+        color: darkgrey;
+        letter-spacing: 1px;
+        line-height: 28px;
+        font-size: 18px;
+        margin-bottom: 45px; }
+
+@media only screen and (max-width: 768px) {
+  .carrousel {
+    display: none; }
+  .carrousel2 {
+    display: flex; }
+  footer .footer-container .socials {
+    margin-top: 50px; }
+  footer .footer-container .footer-menu {
+    flex-direction: column; }
+    footer .footer-container .footer-menu a {
+      margin-top: 5px;
+      padding: 5px; } }

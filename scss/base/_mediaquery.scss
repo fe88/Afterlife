@@ -1,10 +1,14 @@
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 992px) {}
+
+@media only screen and (max-width: 768px) {
     .carrousel {
         display: none;
     }
 
     .carrousel2 {
-        @extend %flex;
+        display: flex;
     }
 
     footer {
@@ -16,18 +20,16 @@
             }
 
             .footer-menu {
+                flex-direction: column;
+
                 a {
-                    @extend %flex;
-                    justify-content: space-around;
                     margin-top: 5px;
                     padding: 5px;
                 }
             }
         }
+
     }
-
-
-
-
-
 }
+
+@media only screen and (max-width: 600px) {}

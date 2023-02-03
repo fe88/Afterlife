@@ -1,6 +1,11 @@
 .carrousel {
     padding-top: 75px;
-
+    h5,p{
+        font-family:nth($font-family,1 );
+        background:nth($bg,4 );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
 }
 
 .carrousel2 {

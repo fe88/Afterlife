@@ -6,6 +6,7 @@ a{ text-decoration: none;
     height: 50px;
     margin: 0 auto;
     margin-top: 3rem;
+    text-decoration: none;
     button{
         width: 100%;
         height: 100%;
@@ -13,6 +14,7 @@ a{ text-decoration: none;
         color: nth($colours, 1);
         font-size: nth($font-size, 2);
         font-family: nth($font-family, 1);
+        text-decoration: none;
 
         &:hover {
             color: nth($colours, 1);

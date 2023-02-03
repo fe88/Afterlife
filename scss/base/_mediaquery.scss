@@ -2,11 +2,31 @@
     .container-card {
         @include grid(grid, repeat(3, 1fr), 450px, 20px);
     }
+
+    .about-text {
+        margin-left: 10px;
+    }
 }
+
 
 @media only screen and (max-width: 992px) {
     .container-card {
         @include grid(grid, repeat(2, 1fr), 450px, 20px);
+    }
+    .about {
+        .main {
+          
+            .about-text {
+                margin-left: 10px;
+
+                h1 {
+                    font-size: 60px;
+
+                }
+
+                
+            }
+        }
     }
 }
 
@@ -38,10 +58,52 @@
         }
 
     }
-}
 
-@media only screen and (max-width: 600px) {
-    .container-card {
-        @include grid(grid, repeat(1, 1fr), 450px, 20px);
+    .about {
+        .main {
+            img {
+                width: 200px;
+            }
+
+            .about-text {
+                margin-left: 10px;
+
+                h1 {
+                    font-size: 40px;
+
+                }
+
+                
+            }
+        }
+    }
+
+    @media only screen and (max-width: 400px) {
+        .about {
+            display: flex;
+            flex-direction: column;
+
+            .main {
+                
+
+                img {
+                    height: 430px;
+                    width: 170px;
+                }
+
+                .about-text {
+                    margin-left: 5px;
+
+                    h1 {
+                        font-size: 40px;
+
+                    }
+
+                    h2 {}
+
+                    .aboutp {}
+                }
+            }
+        }
     }
 }

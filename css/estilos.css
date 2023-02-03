@@ -330,14 +330,16 @@ a {
     width: 400px;
     height: 50px;
     margin: 0 auto;
-    margin-top: 3rem; }
+    margin-top: 3rem;
+    text-decoration: none; }
     a .button button {
       width: 100%;
       height: 100%;
       background: #00000099;
       color: #f495e7;
       font-size: 1.5rem;
-      font-family: "Zen Dots"; }
+      font-family: "Zen Dots";
+      text-decoration: none; }
       a .button button:hover {
         color: #f495e7;
         text-shadow: 0 0 5px #f495e7, 0 0 25px #f495e7, 0 0 50px #f495e7; }
@@ -347,14 +349,20 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 450px;
-    gap: 20px; } }
+    gap: 20px; }
+  .about-text {
+    margin-left: 10px; } }
 
 @media only screen and (max-width: 992px) {
   .container-card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 450px;
-    gap: 20px; } }
+    gap: 20px; }
+  .about .main .about-text {
+    margin-left: 10px; }
+    .about .main .about-text h1 {
+      font-size: 60px; } }
 
 @media only screen and (max-width: 768px) {
   .carrousel {
@@ -367,11 +375,22 @@ a {
     flex-direction: column; }
     footer .footer-container .footer-menu a {
       margin-top: 5px;
-      padding: 5px; } }
+      padding: 5px; }
+  .about .main img {
+    width: 200px; }
+  .about .main .about-text {
+    margin-left: 10px; }
+    .about .main .about-text h1 {
+      font-size: 40px; } }
 
-@media only screen and (max-width: 600px) {
-  .container-card {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: 450px;
-    gap: 20px; } }
+@media only screen and (max-width: 768px) and (max-width: 400px) {
+  .about {
+    display: flex;
+    flex-direction: column; }
+    .about .main img {
+      height: 430px;
+      width: 170px; }
+    .about .main .about-text {
+      margin-left: 5px; }
+      .about .main .about-text h1 {
+        font-size: 40px; } }

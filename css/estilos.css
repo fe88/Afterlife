@@ -339,7 +339,8 @@ a {
       color: #f495e7;
       font-size: 1.5rem;
       font-family: "Zen Dots";
-      text-decoration: none; }
+      text-decoration: none;
+      border: none; }
       a .button button:hover {
         color: #f495e7;
         text-shadow: 0 0 5px #f495e7, 0 0 25px #f495e7, 0 0 50px #f495e7; }

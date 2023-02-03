@@ -1,4 +1,5 @@
 .container__form {
+    padding: map-get($principal-container, padding-container);
     @include flex (flex, center, center, row);
     margin: 0 auto;
     background-image: url(../imagenes/tokyo-city-aesthetic.gif);

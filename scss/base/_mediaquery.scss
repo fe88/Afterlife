@@ -13,9 +13,10 @@
     .container-card {
         @include grid(grid, repeat(2, 1fr), 450px, 20px);
     }
+
     .about {
         .main {
-          
+
             .about-text {
                 margin-left: 10px;
 
@@ -24,7 +25,7 @@
 
                 }
 
-                
+
             }
         }
     }
@@ -73,18 +74,38 @@
 
                 }
 
-                
+
             }
         }
     }
 
     @media only screen and (max-width: 400px) {
+        .container-card {
+            .card {
+                .front {
+                    h3 {
+                        font-size: 20px;
+                    }
+                }
+
+                .back {
+                    h3 {
+                        font-size: 15px;
+                    }
+
+                    p {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+
         .about {
             display: flex;
             flex-direction: column;
 
             .main {
-                
+
 
                 img {
                     height: 430px;

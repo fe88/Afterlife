@@ -385,6 +385,12 @@ a {
       font-size: 40px; } }
 
 @media only screen and (max-width: 768px) and (max-width: 400px) {
+  .container-card .card .front h3 {
+    font-size: 20px; }
+  .container-card .card .back h3 {
+    font-size: 15px; }
+  .container-card .card .back p {
+    font-size: 13px; }
   .about {
     display: flex;
     flex-direction: column; }

@@ -79,22 +79,42 @@
         }
     }
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 550px) {
         .container-card {
             .card {
                 .front {
                     h3 {
-                        font-size: 20px;
+                        font-size: 17px;
                     }
                 }
 
                 .back {
                     h3 {
-                        font-size: 15px;
+                        font-size: 16px;
                     }
 
                     p {
-                        font-size: 13px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    @media only screen and (max-width: 400px) {
+        .container-card {
+            .card {
+                .front {
+                    h3 {
+                        font-size: 15px;
+                    }
+                }
+
+                .back {
+                    h3 {
+                        font-size: 12px;
+                    }
+
+                    p {
+                        font-size: 11px;
                     }
                 }
             }
@@ -127,4 +147,6 @@
             }
         }
     }
+}
+
 }

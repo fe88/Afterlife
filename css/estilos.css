@@ -384,13 +384,21 @@ a {
     .about .main .about-text h1 {
       font-size: 40px; } }
 
-@media only screen and (max-width: 768px) and (max-width: 400px) {
+@media only screen and (max-width: 768px) and (max-width: 550px) {
   .container-card .card .front h3 {
-    font-size: 20px; }
+    font-size: 17px; }
   .container-card .card .back h3 {
-    font-size: 15px; }
+    font-size: 16px; }
   .container-card .card .back p {
-    font-size: 13px; }
+    font-size: 14px; } }
+
+@media only screen and (max-width: 768px) and (max-width: 550px) and (max-width: 400px) {
+  .container-card .card .front h3 {
+    font-size: 15px; }
+  .container-card .card .back h3 {
+    font-size: 12px; }
+  .container-card .card .back p {
+    font-size: 11px; }
   .about {
     display: flex;
     flex-direction: column; }
